@@ -1,20 +1,24 @@
-.html, body
+html, body
 {
     overflow-x: hidden;
     margin: 0;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
     line-height: 1;
+    scroll-behavior: smooth;
 }
 
 body
 {
     background-color: #5449E8;
+    transition-duration: 0.2s;
 }
+
+
 
 .cursor1
 {
-    position: absolute;
+    position: fixed;
     z-index: -2;
     top: 0px;
     transition-duration: 4500ms;
@@ -24,10 +28,14 @@ body
 
 .cursor2
 {
-    position: absolute;
+    position: fixed;
     z-index: 1;
     transition-duration: 1500ms;
     
     transition-timing-function: ease-out;
     pointer-events: none;
+}
+
+.bag-black {
+  background-color: #121212;
 }

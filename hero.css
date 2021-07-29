@@ -8,10 +8,14 @@
     /* background-color: black; */
 }
 
+.hero
+{
+    height: 100vh;
+}
 .heroimg img
 {
     width: 80vw;
-    min-width: 350px;
+    min-width: 400px;
     max-width: 600px;
     animation: intro 2.2s;
     transition: ease-in-out;
@@ -23,6 +27,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.downicon
+{
+    color: white;
 }
 
 @keyframes intro

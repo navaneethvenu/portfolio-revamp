@@ -1,0 +1,47 @@
+.projectcontainer
+{
+
+    display: grid;
+  grid-auto-flow: column;
+  align-items: top;
+    padding: 15px;
+    overflow-x: scroll;
+    height: 100vh;
+}
+
+.project .title
+{
+    padding: 20px;
+    color: #fff;
+}
+
+
+.projecttile
+{
+    width:300px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-color: #5449e8;
+    border-radius: 10px;
+    margin: 15px;
+    transition: 1s;
+    background-image: url("Images/heroimg.png");
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+  box-shadow: 20px 20px 15px #0000001f;
+
+}
+
+.projecttile:hover
+{
+    width:350px;
+    height: 400px;
+    background-color: #5449E8;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 1s;
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+    
+}
