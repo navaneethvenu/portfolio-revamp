@@ -1,0 +1,33 @@
+.html, body
+{
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1;
+}
+
+body
+{
+    background-color: #5449E8;
+}
+
+.cursor1
+{
+    position: absolute;
+    z-index: -2;
+    top: 0px;
+    transition-duration: 4500ms;
+    transform: translate(-50%,-50%);
+    transition-timing-function: ease-out;
+}
+
+.cursor2
+{
+    position: absolute;
+    z-index: 1;
+    transition-duration: 1500ms;
+    
+    transition-timing-function: ease-out;
+    pointer-events: none;
+}

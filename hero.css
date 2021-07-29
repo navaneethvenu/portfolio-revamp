@@ -1,0 +1,62 @@
+.heroimg
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 75vh;
+    flex-direction: column;
+    /* background-color: black; */
+}
+
+.heroimg img
+{
+    width: 80vw;
+    min-width: 350px;
+    max-width: 600px;
+    animation: intro 2.2s;
+    transition: ease-in-out;
+}
+
+.typeholder
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes intro
+{
+    0%   {padding-top: 0%; opacity: 0%;}
+    50% {padding-top: 20px; opacity: 100%;}
+    100% {padding-top: 0px;}
+}
+
+#shortdescription
+{
+    margin-top: -10vh;
+    color: white;
+    font-size: 30px;
+    background-color: #171628;
+}
+  
+#shortdescription::after
+{
+    content: "_";
+    animation: blink 1s infinite ease;
+}
+
+@keyframes blink
+{
+    0%{
+        opacity: 0;
+    }
+    50%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        opacity: 0;
+    }
+}
