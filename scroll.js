@@ -1,4 +1,4 @@
-window.onscroll = function () { scrollFunction(); featureslideFunction(); };
+window.onscroll = function () { scrollFunction(); featureslideFunction(); aboutScroll() };
 
 function scrollFunction() {
     mybutton = document.getElementById("logo");
@@ -43,16 +43,37 @@ function individualElement(name) {
         document.body.style.backgroundColor = "#121212";
         cursorNormal.style.opacity = "0.0";
         cursorInverted.style.opacity = "1.0";
-        aboutNormal.style.opacity = "0.0";
-        aboutInverted.style.opacity = "1.0";
+
 
     }
     else {
         document.body.style.backgroundColor = "#5449E8";
         cursorNormal.style.opacity = "1.0";
         cursorInverted.style.display = "0.0";
+
+    }
+
+}
+
+function aboutScroll() {
+
+    aboutNormal = document.getElementsByClassName('imgAbout')[1];
+    aboutInverted = document.getElementsByClassName('imgAbout')[0];
+    slidelement = document.getElementsByClassName('about')[0];
+    height = slidelement.offsetHeight;
+    width = slidelement.offsetWidth;
+    bounding = slidelement.getBoundingClientRect();
+
+    if (bounding.top >= -height / 2 && bounding.left >= -width / 2 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) / 2 + width / 2 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) / 2 + height / 2) {
+        aboutNormal.style.opacity = "0.0";
+        aboutInverted.style.opacity = "1.0";
+        document.body.style.backgroundColor = "#121212";
+
+    }
+    else {
         aboutNormal.style.opacity = "1.0";
         aboutInverted.style.opacity = "0.0";
+        // document.body.style.backgroundColor = "#5449E8";
     }
 
 }
