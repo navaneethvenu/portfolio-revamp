@@ -38,6 +38,9 @@
         <div class="cursor1">
             <img src="Images/ball.svg" width="100px">
         </div>
+        <div class="cursor3">
+            <img src="Images/ball3.svg" width="100px">
+        </div>
         <div class="cursor2">
             <img src="Images/ball2.svg" width="40px">
 
@@ -46,6 +49,7 @@
     </div>
 
     <script type="text/javascript">
+        var cursorf2 = document.getElementsByClassName('cursor3')[0];
         var cursor = document.getElementsByClassName('cursor2')[0];
         var cursorf = document.getElementsByClassName('cursor1')[0];
 
@@ -56,6 +60,8 @@
             cursor.style.top = y + "px";
             cursorf.style.left = x + "px";
             cursorf.style.top = y + "px";
+            cursorf2.style.left = x + "px";
+            cursorf2.style.top = y + "px";
         });
 
 

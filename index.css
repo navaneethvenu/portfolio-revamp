@@ -26,6 +26,16 @@ body
     transition-timing-function: ease-out;
 }
 
+.cursor3
+{
+    position: fixed;
+    z-index: -3;
+    top: 0px;
+    transition-duration: 4500ms;
+    transform: translate(-50%,-50%);
+    transition-timing-function: ease-out;
+}
+
 .cursor2
 {
     position: fixed;
