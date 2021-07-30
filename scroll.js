@@ -30,6 +30,9 @@ function individualElement(name) {
     cursorNormal = document.getElementsByClassName('cursor1')[0];
     cursorInverted = document.getElementsByClassName('cursor3')[0];
 
+    aboutNormal = document.getElementsByClassName('imgAbout')[1];
+    aboutInverted = document.getElementsByClassName('imgAbout')[0];
+
     slidelement = document.getElementById(name);
     height = slidelement.offsetHeight;
     width = slidelement.offsetWidth;
@@ -40,11 +43,16 @@ function individualElement(name) {
         document.body.style.backgroundColor = "#121212";
         cursorNormal.style.opacity = "0.0";
         cursorInverted.style.opacity = "1.0";
+        aboutNormal.style.opacity = "0.0";
+        aboutInverted.style.opacity = "1.0";
+
     }
     else {
         document.body.style.backgroundColor = "#5449E8";
         cursorNormal.style.opacity = "1.0";
         cursorInverted.style.display = "0.0";
+        aboutNormal.style.opacity = "1.0";
+        aboutInverted.style.opacity = "0.0";
     }
 
 }

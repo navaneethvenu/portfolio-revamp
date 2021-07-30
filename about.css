@@ -1,0 +1,73 @@
+.about .title
+{
+    font-size: 22px;
+    text-align: center;
+    color: #fff;
+}
+
+.about
+{
+    margin-top: 50px;
+}
+
+.aboutPic
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    padding-top: 40px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+
+}
+
+.inverted
+{
+    filter: invert(100%);
+}
+
+.imageOverlap
+{
+    position: relative;
+}
+
+.aboutPic img
+{
+    width: 50vw;
+    min-width: 250px;
+    max-width: 300px;
+    transition-duration: 0.2s;
+    filter: invert(0%);
+}
+
+.aboutContent
+{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.aboutContent p
+{
+    text-align: justify;
+    max-width: 550px;
+    line-height: 1.2;
+}
+
+.aboutContent .highlight
+{
+    font-weight: 600;
+    font-size: 25px;
+}
+
+.about .spacerAbout
+{
+    height: 65vh;
+    min-height: 250px;
+    max-height: 450px; ;
+}

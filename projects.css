@@ -11,7 +11,9 @@
 
 .project .title
 {
-    padding: 20px;
+  font-size: 30px;
+    text-align: center;
+    margin-bottom: -30px;
     color: #fff;
 }
 
@@ -79,8 +81,8 @@
     margin: 15px;
     transition: 1s;
     background-image: url("Images/heroimg.png");
-    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+    -webkit-filter: grayscale(90%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(90%);
   box-shadow: 20px 20px 15px #0000001f;
 
 }

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="hero.css">
     <link rel="stylesheet" href="projects.css">
     <link rel="stylesheet" href="loader.css">
+    <link rel="stylesheet" href="about.css">
 
     <script src="projects.js"></script>
     <script src="scroll.js"></script>
@@ -75,7 +76,7 @@
                 <a href="#">Navaneeth<br>Venu</a>
             </div>
             <div class="right">
-                <a href="#">About</a>
+                <a href="#about">About</a>
                 <a href="#projects">Projects</a>
                 <a href="#">Contact</a>
                 <a href="/Resume.pdf" download="NavaneethVenu-Resume" onclick="closeNav()">Download Resume</a>
@@ -94,7 +95,8 @@
             </div>
             <div class="sideContent">
                 <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav();">&times;</a> -->
-                <a class="navItem activeLink" href="#" onclick="addStrike(0);closeNav();">About</a>
+                <a class="navItem activeLink" href="#" onclick="addStrike(0);closeNav();">Home</a>
+                <a class="navItem" href="#about" onclick="addStrike(0);closeNav();">About</a>
                 <a class="navItem" href="#projects" onclick="addStrike(1);closeNav()">Projects</a>
                 <a class="navItem" href="#" onclick="addStrike(2);closeNav()">Contact</a>
                 <a class="navItem" href="/Resume.pdf" download="NavaneethVenu-Resume"
@@ -106,10 +108,60 @@
         <div class="heroimg" id="panel1">
             <img src="Images/heroimg.png" alt="">
             <p id="shortdescription">What I am</p>
-            <a href="#projects"><i class="fa fa-angle-down fa-4x downicon" aria-hidden="true"></i></a>
+            <a href="#about"><i class="fa fa-angle-down fa-4x downicon" aria-hidden="true"></i></a>
         </div>
     </section>
 
+    <a id="about"></a>
+    <div class="about">
+        <div class="title">
+            <h1>About Me</h1>
+        </div>
+        <div class="aboutContent">
+            <p>I am a <span class="highlight">Second-Year Computer Science Engineering
+                    Undergraduate </span> Student from Mar Baselios
+                College of
+                Engineering and Technology, Trivandrum.<br>I am keenly interested in all things design.
+            </p>
+            <p>I design trending
+                yet <span class="highlight">memorable
+                    user-oriented</span>
+                experiences through
+                well thought out
+                <span class="highlight">User Interfaces</span>.</p>
+        </div>
+        <div class="imageOverlap">
+            <div class="aboutPic">
+                <img class="imgAbout" src="Images/twime.svg" alt="">
+                <!-- <img class="imgAbout" src="Images/twime.svg"> -->
+
+            </div>
+            <div class="aboutPic">
+                <img class="imgAbout" src="Images/twimeInverted.svg" alt="">
+                <!-- <img class="imgAbout" src="Images/twime.svg"> -->
+
+            </div>
+        </div>
+        <div class="spacerAbout">
+
+        </div>
+        <div class="aboutContent">
+            <p>I’m also well
+                versed in creating
+                content tailored to
+                <span class="highlight">digitally empower
+                    your brand</span> through
+                Social Media.</p>
+            <p>I’m focused on implementing
+                <span class="highlight">ideas and concepts</span>,
+                rather than plain designs,
+                so as to apply to
+                <span class="highlight">real world applications</span>,
+                all the while
+                breaking <span class="highlight">out of the box</span>.</p>
+        </div>
+    </div>
+    </div>
 
     <!-- Project Section -->
     <section class="project">
