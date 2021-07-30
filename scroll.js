@@ -60,6 +60,8 @@ function aboutScroll() {
     aboutNormal = document.getElementsByClassName('imgAbout')[1];
     aboutInverted = document.getElementsByClassName('imgAbout')[0];
     slidelement = document.getElementsByClassName('about')[0];
+    cursorNormal = document.getElementsByClassName('cursor1')[0];
+    cursorInverted = document.getElementsByClassName('cursor3')[0];
     height = slidelement.offsetHeight;
     width = slidelement.offsetWidth;
     bounding = slidelement.getBoundingClientRect();
@@ -69,12 +71,17 @@ function aboutScroll() {
         aboutNormal.style.opacity = "0.0";
         aboutInverted.style.opacity = "1.0";
         document.body.style.backgroundColor = "#121212";
+        cursorNormal.style.opacity = "0.0";
+        cursorInverted.style.opacity = "1.0";
 
     }
     else {
         aboutNormal.style.opacity = "1.0";
         aboutInverted.style.opacity = "0.0";
         // document.body.style.backgroundColor = "#5449E8";
+        cursorNormal.style.opacity = "1.0";
+        cursorInverted.style.display = "0.0";
+
     }
 
 }
