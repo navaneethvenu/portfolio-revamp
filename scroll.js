@@ -1,4 +1,4 @@
-window.onscroll = function () { scrollFunction(); featureslideFunction(); aboutScroll() };
+window.onscroll = function () { scrollFunction(); featureslideFunction(); aboutScroll(); heroScroll(); };
 
 function scrollFunction() {
     mybutton = document.getElementById("logo");
@@ -38,6 +38,7 @@ function individualElement(name) {
     width = slidelement.offsetWidth;
     bounding = slidelement.getBoundingClientRect();
 
+
     if (bounding.top >= -height && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + height) {
         // Document.body.classList.add("bag-black");
         document.body.style.backgroundColor = "#121212";
@@ -60,15 +61,19 @@ function aboutScroll() {
     aboutNormal = document.getElementsByClassName('imgAbout')[1];
     aboutInverted = document.getElementsByClassName('imgAbout')[0];
     slidelement = document.getElementsByClassName('about')[0];
+    hero = document.getElementsByClassName('hero')[0];
     height = slidelement.offsetHeight;
     width = slidelement.offsetWidth;
     bounding = slidelement.getBoundingClientRect();
+
+
 
     if (bounding.top >= -height / 2 && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) / 2 + height / 2) {
 
         aboutNormal.style.opacity = "0.0";
         aboutInverted.style.opacity = "1.0";
         document.body.style.backgroundColor = "#121212";
+
 
     }
     else {
@@ -78,4 +83,35 @@ function aboutScroll() {
 
     }
 
+}
+
+function heroScroll() {
+    hero = document.getElementsByClassName('hero')[0];
+    slidelement = document.getElementsByClassName('heroimg')[0];
+    slidelementNext = document.getElementsByClassName('about')[0];
+    height = slidelement.offsetHeight;
+    width = slidelement.offsetWidth;
+    heightNext = slidelementNext.offsetHeight;
+    widthNext = slidelementNext.offsetWidth;
+    bounding = slidelement.getBoundingClientRect();
+    boundingNext = slidelementNext.getBoundingClientRect();
+    downbutton = document.getElementsByClassName('downicon')[0];
+
+    hero.style.height = "100vh";
+
+    if ((bounding.top >= -height && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + height) && ((document.body.scrollTop > 10 || document.documentElement.scrollTop > 10))) {
+
+        hero.style.height = "70vh";
+        downbutton.style.height = "0px";
+        downbutton.style.opacity = "0";
+    }
+    else if (!(bounding.top >= -height && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + height) && (boundingNext.top >= -heightNext && boundingNext.left >= -widthNext && boundingNext.right <= (window.innerWidth || document.documentElement.clientWidth) + widthNext && boundingNext.bottom <= (window.innerHeight || document.documentElement.clientHeight) + heightNext)) {
+        hero.style.height = "70vh";
+        downbutton.style.height = "0px";
+        downbutton.style.opacity = "0";
+    }
+    else {
+        hero.style.height = "100vh";
+        downbutton.style.opacity = "1";
+    }
 }
