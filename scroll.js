@@ -51,6 +51,7 @@ function individualElement(name) {
         document.body.style.backgroundColor = "#5449E8";
         cursorNormal.style.opacity = "1.0";
         cursorInverted.style.display = "0.0";
+        //heh
 
     }
 
