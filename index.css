@@ -49,3 +49,8 @@ body
 .bag-black {
   background-color: #121212;
 }
+
+.spacer
+{
+    width: 20px;
+}

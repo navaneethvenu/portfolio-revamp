@@ -43,6 +43,7 @@ function addProjects() {
     var title;
     var desc;
     var button;
+    var spacer;
 
     for (i in data["projects"]) {
 
@@ -69,5 +70,8 @@ function addProjects() {
         element.appendChild(tile);
         // console.log(`url('${data["projects"][i]["imageURL"]}')`);
     }
+    spacer = document.createElement("div");
+    spacer.classList.add("spacer");
+    element.appendChild(spacer)
 
 }
