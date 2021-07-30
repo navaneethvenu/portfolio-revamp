@@ -1,4 +1,4 @@
-window.onscroll = function () { scrollFunction(); featureslideFunction(); aboutScroll(); heroScroll(); };
+window.onscroll = function () { scrollFunction(); aboutScroll(); heroScroll(); };
 
 function scrollFunction() {
     mybutton = document.getElementById("logo");
@@ -41,7 +41,7 @@ function individualElement(name) {
 
     if (bounding.top >= -height && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + height) {
         // Document.body.classList.add("bag-black");
-        document.body.style.backgroundColor = "#121212";
+        document.body.style.backgroundColor = "#171628";
         cursorNormal.style.opacity = "0.0";
         cursorInverted.style.opacity = "1.0";
 
@@ -58,6 +58,9 @@ function individualElement(name) {
 
 function aboutScroll() {
 
+    cursorNormal = document.getElementsByClassName('cursor1')[0];
+    cursorInverted = document.getElementsByClassName('cursor3')[0];
+
     aboutNormal = document.getElementsByClassName('imgAbout')[1];
     aboutInverted = document.getElementsByClassName('imgAbout')[0];
     slidelement = document.getElementsByClassName('about')[0];
@@ -67,19 +70,22 @@ function aboutScroll() {
     bounding = slidelement.getBoundingClientRect();
 
 
-
     if (bounding.top >= -height / 2 && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) / 2 + height / 2) {
 
         aboutNormal.style.opacity = "0.0";
         aboutInverted.style.opacity = "1.0";
-        document.body.style.backgroundColor = "#121212";
+        document.body.style.backgroundColor = "#171628";
+        cursorNormal.style.opacity = "0.0";
+        cursorInverted.style.opacity = "1.0";
 
 
     }
     else {
         aboutNormal.style.opacity = "1.0";
         aboutInverted.style.opacity = "0.0";
-        // document.body.style.backgroundColor = "#5449E8";
+        document.body.style.backgroundColor = "#5449E8";
+        cursorNormal.style.opacity = "1.0";
+        cursorInverted.style.display = "0.0";
 
     }
 
