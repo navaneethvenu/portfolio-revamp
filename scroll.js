@@ -17,7 +17,7 @@ function featureslideFunction() {
     // for (var i = 0; i < n; ++i) {
     //     individualElement("panel" + (i + 1).toString())
     // }
-    individualElement("panel2");
+    individualElement("projectsection");
     // individualElement2("panel1");
 
 }

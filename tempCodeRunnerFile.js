@@ -1,0 +1,1 @@
+console.log(`url('${data1["projects"][i]["imageURL"]}')`);
