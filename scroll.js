@@ -38,13 +38,13 @@ function individualElement(name) {
     if (bounding.top >= -height && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) + height) {
         // Document.body.classList.add("bag-black");
         document.body.style.backgroundColor = "#121212";
-        cursorNormal.style.display = "none";
-        cursorInverted.style.display = "block";
+        cursorNormal.style.opacity = "0.0";
+        cursorInverted.style.opacity = "1.0";
     }
     else {
         document.body.style.backgroundColor = "#5449E8";
-        cursorNormal.style.display = "block";
-        // cursorInverted.style.display = "none";
+        cursorNormal.style.opacity = "1.0";
+        cursorInverted.style.display = "0.0";
     }
 
 }
