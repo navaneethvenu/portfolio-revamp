@@ -1,0 +1,35 @@
+.contain404
+{
+    color: #fff;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contain404 p
+{
+    margin-top: -15px;
+}
+
+.contain404 a
+{
+  text-decoration: none;
+  background-color: #121212;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  transition-duration: 0.5s;
+  margin-bottom: 20px;
+}
+
+.contain404 a:hover
+{
+    background-color: #fff;
+    color: #121212;
+  padding: 15px;
+  transition-duration: 0.5s;
+  box-shadow: 0px 0px 35px #00000042;
+}
