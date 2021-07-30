@@ -1,4 +1,15 @@
-window.onscroll = function () { featureslideFunction(); };
+window.onscroll = function () { scrollFunction(); featureslideFunction(); };
+
+function scrollFunction() {
+    mybutton = document.getElementById("logo");
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.opacity = "0.0";
+        mybutton.style.transitionDuration = "0.5s";
+
+    } else {
+        mybutton.style.opacity = "1.0";
+    }
+}
 
 function featureslideFunction() {
     n = 2;
