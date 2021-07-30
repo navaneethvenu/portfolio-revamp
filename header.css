@@ -15,17 +15,40 @@
     position: fixed;
     z-index: 1;
     background-color:#121212;
-    height: 100%;
-    width: 0; 
+    height: 100vh;
+    width: 100vw; 
     overflow-x: hidden; 
     transition: 0.5s;
+}
+
+.sideHeader
+{
+    display: flex;
+    padding: 20px;
+    /* background-color: rgb(196, 110, 110); */
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.sideHeader a
+{
+    text-decoration: none;
+    color: #e0e0e0;
+    line-height: 0.8;
+}
+
+.sideHeader .left
+{
+    font-weight: 600;
+    font-size: 20px;
 }
 
 .sideContent
 {
     display: flex;
     flex-wrap: nowrap;
-    padding-top: 90px;
+    padding-top: 10vh;
     padding-left: 20px;
     padding-right: 20px;
     justify-content: right;
@@ -34,19 +57,25 @@
 }
 
 
-.sideNav a
+.sideContent a
 {
     text-decoration: none;
     color: #e0e0e0;
     margin: 10px;
-    font-size: 20px;
+    font-size: 50px;
+    text-align: center;
+}
+
+.sideContent .activeLink
+{
+    text-decoration: line-through;
 }
 
 .sideNav .closebtn {
   position: absolute;
   top: 10px;
   right: 15px;
-  font-size: 36px;
+  font-size: 70px;
   margin-left: 50px;
 }
 

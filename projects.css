@@ -47,6 +47,7 @@
 
 .projectcontent a
 {
+  display: none;
   text-decoration: none;
   background-color: #5449E8;
   color: #fff;
@@ -100,6 +101,12 @@
 
 .projecttile:hover > .projectcontent {
     opacity: 1;
+    transition-duration: 1s;
+    transition-delay: 0.9s;
+}
+
+.projecttile:hover > .projectcontent a {
+    display: block;
     transition-duration: 1s;
     transition-delay: 0.9s;
 }
