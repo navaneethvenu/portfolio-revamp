@@ -64,7 +64,8 @@ function aboutScroll() {
     width = slidelement.offsetWidth;
     bounding = slidelement.getBoundingClientRect();
 
-    if (bounding.top >= -height / 2 && bounding.left >= -width / 2 && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) / 2 + width / 2 && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) / 2 + height / 2) {
+    if (bounding.top >= -height / 2 && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) / 2 + height / 2) {
+
         aboutNormal.style.opacity = "0.0";
         aboutInverted.style.opacity = "1.0";
         document.body.style.backgroundColor = "#121212";
