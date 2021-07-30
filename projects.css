@@ -51,18 +51,14 @@
   background-color: #5449E8;
   color: #fff;
   border-radius: 5px;
-  padding: 5px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding: 10px;
   transition-duration: 0.5s;
   margin-bottom: 20px;
 }
 
 .projectcontent a:hover
 {
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding: 15px;
   transition-duration: 0.5s;
   box-shadow: 0px 0px 65px #00000098;
 }
