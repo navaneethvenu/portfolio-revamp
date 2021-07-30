@@ -69,6 +69,7 @@
 .sideContent .activeLink
 {
     text-decoration: line-through;
+    color: #5449E8;
 }
 
 .sideNav .closebtn {
