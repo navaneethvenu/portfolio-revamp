@@ -17,7 +17,7 @@ function featureslideFunction() {
     // for (var i = 0; i < n; ++i) {
     //     individualElement("panel" + (i + 1).toString())
     // }
-    individualElement("projectsection");
+    // individualElement("projectsection");
     // individualElement2("panel1");
 
 }
@@ -51,13 +51,16 @@ function individualElement(name) {
         document.body.style.backgroundColor = "#5449E8";
         cursorNormal.style.opacity = "1.0";
         cursorInverted.style.display = "0.0";
-        //heh
+
 
     }
 
 }
 
 function aboutScroll() {
+
+    cursorNormal = document.getElementsByClassName('cursor1')[0];
+    cursorInverted = document.getElementsByClassName('cursor3')[0];
 
     aboutNormal = document.getElementsByClassName('imgAbout')[1];
     aboutInverted = document.getElementsByClassName('imgAbout')[0];
@@ -69,18 +72,24 @@ function aboutScroll() {
 
 
 
-    if (bounding.top >= -height / 2 && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) / 2 + height / 2) {
+    if (bounding.top >= -height && bounding.left >= -width && bounding.right <= (window.innerWidth || document.documentElement.clientWidth) + width && bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) / 2 + height / 2) {
 
         aboutNormal.style.opacity = "0.0";
         aboutInverted.style.opacity = "1.0";
         document.body.style.backgroundColor = "#121212";
+
+        cursorNormal.style.opacity = "0.0";
+        cursorInverted.style.opacity = "1.0";
 
 
     }
     else {
         aboutNormal.style.opacity = "1.0";
         aboutInverted.style.opacity = "0.0";
-        // document.body.style.backgroundColor = "#5449E8";
+        document.body.style.backgroundColor = "#5449E8";
+
+        cursorNormal.style.opacity = "1.0";
+        cursorInverted.style.display = "0.0";
 
     }
 

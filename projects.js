@@ -96,8 +96,11 @@ function addProjects() {
         //     console.log((i % 3 + 1));
         //     tile.classList.add(`projecttile${(i % 3) + 1}`);
         // }
-        if (i % 2 != 0)
+
+
+        if ((i + 1) % 3 == 1 || (i + 1) % 3 == 0)
             tile.classList.add("projecttile2")
+
         content.classList.add('projectcontent');
         content.appendChild(title);
         content.appendChild(desc);
@@ -112,18 +115,20 @@ function addProjects() {
     spacer = document.createElement("div");
     spacer.classList.add("spacer");
     element.appendChild(spacer);
-    projectHover();
+    // projectHover();
 
 }
 
-function projectHover() {
+// function projectHover() {
 
-    var data = projectData;
-    for (i in data["projects"]) {
-        console.log(i);
-        element = document.getElementsByClassName('projecttile')[i];
-        element.onmouseover = function () {
-            element.scrollIntoView();
-        }
-    }
-}
+//     var data = projectData;
+//     for (i in data["projects"]) {
+//         console.log(i);
+//         if (i % 3 == 0) {
+//             element = document.getElementsByClassName('projecttile')[i];
+//             element.onmouseover = function () {
+//                 element.scrollIntoView({ behavior: "smooth", inline: "nearest", block: "end" });
+//             }
+//         }
+//     }
+// }

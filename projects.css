@@ -1,12 +1,12 @@
 .projectcontainer
 {
 
-    display: grid;
-  grid-auto-flow: column;
+    display: flex;
   align-items: top;
+  justify-content: center;
     padding: 15px;
-    overflow-x: scroll;
-    height: 100vh;
+    /* height: 100vh; */
+    flex-wrap: wrap;
 }
 
 .project .title
@@ -136,4 +136,14 @@
     display: block;
     transition-duration: 1s;
     transition-delay: 0.9s;
+}
+
+@media screen and (max-width: 768px){
+  .projecttile2
+{
+  
+    margin-top: 20px;
+    margin-right: 30px;
+    
+}
 }
