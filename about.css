@@ -39,6 +39,12 @@
     filter: invert(0%);
 }
 
+.aboutBall
+{
+    margin-top: 100px;
+    display: none;
+}
+
 .aboutContent
 {
     color: #fff;
