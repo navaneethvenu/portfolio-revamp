@@ -90,10 +90,12 @@ function addProjects() {
         button.href = data["projects"][i]["projectURL"];
         button.target = "_blank";
         tile.classList.add('projecttile');
-        if ((i % 3) + 1 == 2 || (i % 3) + 1 == 3) {
-            console.log((i % 3 + 1));
-            tile.classList.add(`projecttile${(i % 3) + 1}`);
-        }
+        // if ((i % 3) + 1 == 2 || (i % 3) + 1 == 3) {
+        //     console.log((i % 3 + 1));
+        //     tile.classList.add(`projecttile${(i % 3) + 1}`);
+        // }
+        if (i % 2 != 0)
+            tile.classList.add("projecttile2")
         content.classList.add('projectcontent');
         content.appendChild(title);
         content.appendChild(desc);
