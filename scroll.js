@@ -103,6 +103,8 @@ function aboutScroll() {
         cursorNormal.style.opacity = "0.0";
         cursorInverted.style.opacity = "1.0";
 
+        document.getElementsByClassName('wrapper')[0].style.opacity = "0.0"
+
 
     }
     else {
@@ -113,6 +115,7 @@ function aboutScroll() {
         cursorNormal.style.opacity = "1.0";
         cursorInverted.style.display = "0.0";
 
+        document.getElementsByClassName('wrapper')[0].style.opacity = "1.0";
     }
 
 }
