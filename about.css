@@ -28,10 +28,7 @@
     filter: invert(100%);
 }
 
-.imageOverlap
-{
-    position: relative;
-}
+
 
 .aboutPic img
 {
@@ -47,22 +44,44 @@
     color: #fff;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     padding: 20px;
+    /* background-color: black; */
+}
+
+.aboutContentContainerContainer
+{
+    display: flex;
+    /* background-color: pink; */
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100vw;
+    position: relative;
+}
+
+.aboutContentContainer
+{
+    display: flex;
+    /* background-color: blue; */
+    align-items: start;
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .aboutContent p
 {
-    text-align: justify;
+    text-align: start;
     max-width: 550px;
     line-height: 1.2;
+    font-size: 20px;
 }
 
 .aboutContent .highlight
 {
     font-weight: 600;
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .about .spacerAbout

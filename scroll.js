@@ -124,4 +124,15 @@ function heroScroll() {
         hero.style.height = "100vh";
         downbutton.style.opacity = "1";
     }
+
+}
+
+function imgAbout() {
+    var element = document.getElementsByClassName('aboutContent')[0];
+    var bodyRect = document.body.getBoundingClientRect(),
+        elemRect = element.getBoundingClientRect(),
+        offset = elemRect.top - bodyRect.top;
+    var image = document.getElementsByClassName('imageOverlap')[0];
+    imgRect = image.getBoundingClientRect();
+    imgRect.top = offset;
 }
