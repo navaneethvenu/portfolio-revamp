@@ -66,6 +66,8 @@ projectData = {
 
 function addProjects() {
 
+
+
     data = projectData;
     const element = document.getElementById("projectsection");
     var tile;
@@ -109,6 +111,19 @@ function addProjects() {
     }
     spacer = document.createElement("div");
     spacer.classList.add("spacer");
-    element.appendChild(spacer)
+    element.appendChild(spacer);
+    projectHover();
 
+}
+
+function projectHover() {
+
+    var data = projectData;
+    for (i in data["projects"]) {
+        console.log(i);
+        element = document.getElementsByClassName('projecttile')[i];
+        element.onmouseover = function () {
+            element.scrollIntoView();
+        }
+    }
 }
