@@ -109,7 +109,7 @@ function aboutScroll() {
     }
     else {
         aboutNormal.style.opacity = "1.0";
-        aboutInverted.style.opacity = "0.4";
+        aboutInverted.style.opacity = "0.25";
         document.body.style.backgroundColor = "#5449E8";
 
         cursorNormal.style.opacity = "1.0";

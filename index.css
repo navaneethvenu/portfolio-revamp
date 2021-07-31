@@ -46,6 +46,26 @@ body
     pointer-events: none;
 }
 
+@keyframes animCursor
+{
+    0%{margin-top: 0px; margin-left: 0px;}
+    
+    55%{margin-top: 70px; margin-right: 0px;}
+    100%{margin-top: 0px; margin-right: 0px;}
+}
+
+.cursorAnim
+{
+    animation: animCursor 10s infinite;
+    /* animation-timing-function: ease-in-out; */
+}
+
+.cursorAnimMain
+{
+    animation: animCursor 7.5s infinite;
+    /* animation-timing-function: ease-in-out; */
+}
+
 .bag-black {
   background-color: #121212;
 }

@@ -55,13 +55,13 @@
 
     <!-- Cursor Followers -->
     <div class="cursor">
-        <div class="cursor1">
+        <div class="cursor1 cursorAnim">
             <img class="cursorImg" src="Images/ball.svg" width="100px">
         </div>
-        <div class="cursor3">
+        <div class="cursor3 cursorAnim">
             <img class="cursorImg" src="Images/ball3.svg" width="100px">
         </div>
-        <div class="cursor2">
+        <div class="cursor2 cursorAnimMain">
             <img src="Images/ball2.svg" width="40px">
 
         </div>
@@ -72,8 +72,10 @@
         var cursorf2 = document.getElementsByClassName('cursor3')[0];
         var cursor = document.getElementsByClassName('cursor2')[0];
         var cursorf = document.getElementsByClassName('cursor1')[0];
+        var cursorAnim = document.getElementsByClassName('cursorAnim')[0];
 
         window.addEventListener('mousemove', function (e) {
+            cursorAnim.style.webkitAnimationPlayState = 'paused'
             var x = e.clientX;
             var y = e.clientY;
             cursor.style.left = x + "px";
@@ -82,6 +84,7 @@
             cursorf.style.top = y + "px";
             cursorf2.style.left = x + "px";
             cursorf2.style.top = y + "px";
+            cursorAnim.style.webkitAnimationPlayState = 'running'
         });
 
 
