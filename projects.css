@@ -17,14 +17,6 @@
     color: #fff;
 }
 
-.project .title h1
-{
-  /* background-color: #5449E8; */
-  text-decoration: underline;
-  text-decoration-color: #5449E8;
-  text-decoration-style:  wavy;
-}
-
 .projectcontent p
 {
   font-size: 15px;
