@@ -75,7 +75,7 @@
         var cursorAnim = document.getElementsByClassName('cursorAnim')[0];
 
         window.addEventListener('mousemove', function (e) {
-            cursorAnim.style.webkitAnimationPlayState = 'paused'
+            // cursorAnim.style.webkitAnimationPlayState = 'paused'
             var x = e.clientX;
             var y = e.clientY;
             cursor.style.left = x + "px";
@@ -84,7 +84,7 @@
             cursorf.style.top = y + "px";
             cursorf2.style.left = x + "px";
             cursorf2.style.top = y + "px";
-            cursorAnim.style.webkitAnimationPlayState = 'running'
+            // cursorAnim.style.webkitAnimationPlayState = 'running'
         });
 
 
