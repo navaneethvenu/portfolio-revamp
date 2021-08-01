@@ -103,7 +103,6 @@
     .header a:hover
     {
         color: #fff;
-        font-size:18px;
         transition-duration: 1s;
     }
 }
