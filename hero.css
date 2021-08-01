@@ -38,6 +38,11 @@
     transition-duration: 1s;
 }
 
+.downicon:hover
+{
+    font-size: 80px;
+}
+
 @keyframes intro
 {
     0%   {padding-top: 0%; opacity: 0%;}

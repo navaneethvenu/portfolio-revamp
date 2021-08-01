@@ -14,6 +14,11 @@ function scrollFunction() {
     if ((document.body.scrollTop > 500 && document.body.scrollTop < 1450) || (document.documentElement.scrollTop > 500 && document.documentElement.scrollTop < 1450)) {
         cursor1.style.width = "300px";
         cursor2.style.width = "300px";
+        cursor1.scroll({
+            top: 10,
+            left: 10,
+            behavior: 'smooth'
+        });
         cursor1.style.transitionDuration = "1s";
         cursor2.style.transitionDuration = "1s";
 
@@ -28,6 +33,29 @@ function scrollFunction() {
         cursor1.style.width = "100px";
         cursor2.style.width = "100px";
     }
+
+
+}
+
+function cursorFollow() {
+
+    var cursorf2 = document.getElementsByClassName('cursor3')[0];
+    var cursor = document.getElementsByClassName('cursor2')[0];
+    var cursorf = document.getElementsByClassName('cursor1')[0];
+    var cursorAnim = document.getElementsByClassName('cursorAnim')[0];
+
+    window.addEventListener('mousemove', function (e) {
+        cursorAnim.style.webkitAnimationPlayState = 'paused'
+        var x = e.clientX;
+        var y = e.clientY;
+        cursor.style.left = x + "px";
+        cursor.style.top = y + "px";
+        cursorf.style.left = x + "px";
+        cursorf.style.top = y + "px";
+        cursorf2.style.left = x + "px";
+        cursorf2.style.top = y + "px";
+        cursorAnim.style.webkitAnimationPlayState = 'running'
+    });
 
 
 }

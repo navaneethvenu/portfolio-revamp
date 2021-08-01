@@ -47,6 +47,16 @@
   border-radius: 0 0 10px 10px;
 }
 
+@keyframes flexGrow
+{
+  0%{
+    flex-wrap: wrap;
+  }
+  100%{
+    flex-wrap: nowrap;
+  }
+}
+
 .projectcontent a
 {
   display: none;
@@ -105,6 +115,7 @@
 .projecttile:hover
 {
     width:350px;
+    animation: flexGrow 3s ease-in-out;
     height: 400px;
     background-color: #5449E8;
     border-radius: 10px;
