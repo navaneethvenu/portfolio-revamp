@@ -1,6 +1,18 @@
 projectData = {
     "projects": [
         {
+            "name": "Attendo | Flutter Dev",
+            "imageURL": "Images/Projects/work7.PNG",
+            "projectURL": "https://rebrand.ly/attendoapp",
+            "descShort": "This is an attendance tracking app created to help ease the tracking of student attendance for teachers in both online as well as offline mode."
+        },
+        {
+            "name": "Blupe | UX/UI + Branding",
+            "imageURL": "Images/Projects/work8.PNG",
+            "projectURL": "https://https://play.google.com/store/apps/details?id=me.aravind.blupespace",
+            "descShort": "Blupe is an easy to use video conferincing app designed to keep things quick and simple"
+        },
+        {
             "name": "Music Landing Page",
             "imageURL": "Images/Projects/work1.PNG",
             "projectURL": "https://alternaet.ga/guess",
